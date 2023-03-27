@@ -1,0 +1,11 @@
+pandas
+patool
+pyunpack
+pymysql
+pysftp
+pyfiglet
+py7zr
+boto3
+awscli
+discord-webhook
+requests

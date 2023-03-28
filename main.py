@@ -14,6 +14,7 @@ import warnings
 import py7zr
 import pysftp
 import patoolib
+import datetime
 
 import pymysql
 import pandas as pd
@@ -424,8 +425,18 @@ def get_wiwi_s3_files():
     #s3_list_data = list(s3_folder_data)
     return final_data
 
+#Get Day before
+def get_day_before():
+    day_before = datetime.datetime.today() - datetime.timedelta(days=1)
+    day_formatr = day_before.strftime("%Y%m%d")
+    print(day_formatr)
+    return(day_formatr)
+
 if __name__ == "__main__":
     #do_sftp()
     #process_batch_dir()
     truncate_table()
-    process_file_forced(["EstadoConsumo_168_20230323.csv"])
+    file = "EstadoConsumo_168_"+get_day_before()+".csv"
+    print(file)
+    process_file_forced([file])
+    #get_day_before()

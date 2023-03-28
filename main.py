@@ -74,7 +74,7 @@ def truncate_table():
     cursor = cnx.cursor()
     try:
         #cursor.execute(sql_truncate)
-        cursor.execute("TRUNCATE TABLE sftp_hook")
+        cursor.execute("TRUNCATE TABLE sftp_hook_prod")
         cnx.commit()
         print("Truncate table succesfully")
     except Exception as ex:

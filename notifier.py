@@ -6,7 +6,7 @@ import requests
 
 def messageDiscord(title,description):
 
-    url = "https://discord.com/api/webhooks/1091136013423890535/TojgkAGWqRFxO121stGxjoAqBm0O-dIOohgjM3kCZbuF755z7S17ZieUDeTVTIYo4jYj"
+    url = "https://discord.com/api/webhooks/1092887242025996418/0jVDPCk6Giopwa2xSHZCdVXfoW0r0HJk36B_XdbmKl4dYl7Ypf-ywVjrx4PpJbJNlU32"
   
     payload = json.dumps({
     "embeds": [
